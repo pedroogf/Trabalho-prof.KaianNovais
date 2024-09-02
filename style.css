@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(0, 0, 0);
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    height: 7vh;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+header a {
+    text-decoration: none;
+}
+
+
+
+
+section {
+    height: 100vh;
+    background: rgb(0, 0, 0);
+}
+
+.body-home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-home {
+    height: 60vh;
+    width: 87%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container-home h1 {
+    font-size: 80px;
+    font-weight: 1000;
+    display: inline-flex;
+
+}
+
+#nome-home {
+    color: aqua;
+    margin-left: 20px;
+}
+
+.container-home h2 {
+    font-size: 50px;
+    font-weight: 1000;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    display: inline-flex;
+}
+
+
+.container-home p {
+    font-size: 22px;
+    font-weight: 400;
+    text-indent: 60px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+#saiba-mais{
+    background: aqua;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 15px;
+    transition: 0.5s;
+    border: 1px solid aqua;
+
+
+
+}
+
+#saiba-mais:hover {
+    border-radius: 25px;
+    background: black;
+    color: aqua;
+    border: 1px solid aqua;
+    box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.245);
+
+}
+
+
+@keyframes quik {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+
+.info-home {
+    width: 55%;
+}
+
+.art-home {
+    background: rgb(0, 0, 0);
+    width: 40%;
+    height: 120%;
+    animation: quik 5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.art-home img {
+    height: 100%;
+}
+
+
+
+
+
+
+
+.sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80vh;
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.art-sobre {
+    width: 42%;
+    transition: 1.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.art-sobre img {
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
+.art-sobre:hover {
+    background-size: 185%;
+}
+
+
+
+
+.info-sobre {
+    width: 50%;
+}
+
+.info-sobre h1{
+    font-size: 70px;
+    font-weight: 1000;
+    display: inline-flex;
+    color: aqua;
+
+}
+
+.info-sobre p {
+
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-top: 20px;
+    color: rgb(186, 186, 186);
+    line-height: 25px;
+}
+
+#nosso-timeText {
+    text-indent: 50px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 19px;
+    font-weight: 100;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li{
+    margin: 10px 0;
+    color: rgb(186, 186, 186);
+}
+
+.tab-contents ul li span {
+    color: aqua;
+    font-size: 14px;
+}
+
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+
+
+
+
+
+
